@@ -1,0 +1,33 @@
+// Media Queries
+@mixin  telefono {
+    @media (min-width: #{$telefono}) {
+        
+    }
+}
+@mixin  tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin  desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+@mixin btn($bgColor) {
+    background-color: $bgColor;
+    border: none;
+    border-radius: $radius;
+    color: $blanco;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
